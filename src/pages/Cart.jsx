@@ -1,5 +1,11 @@
 function Cart() {
-  return <h1>Add to cart</h1>;
+  return (
+    <div className="cart">
+
+        <h1>Add to cart</h1>
+
+    </div>
+  )
 }
 
 export default Cart;
