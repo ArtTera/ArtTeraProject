@@ -18,13 +18,8 @@ const containerStyle = {
 
 function App() {
   return (
-    <div  style={{
-      backgroundImage: 'url(src/assets/image-from-rawpixel-id-6233550-jpeg.jpg)',
-      backgroundSize: 'cover',
-      backgroundPosition: 'center',
-      height: '100vh',
-      width: '100%',
-    }}>
+    <div  
+    style={containerStyle}>
       <><Navbar /><Routes>
           <Route path="/" exact element={<HomePage />} />
           <Route path="/Cart" element={<Cart />} />
