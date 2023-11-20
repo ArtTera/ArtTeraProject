@@ -4,7 +4,8 @@ import axios from "axios";
 function Painting() {
   const [pic,setPic]= useState([]);
   const getPic =() =>{
-    axios.get("https://appi.adaptable.app/pic")
+    axios
+    .get("https://appi.adaptable.app/pic")
   
   .then ((Response)=>{
     setPic(Response.data);
@@ -16,24 +17,25 @@ function Painting() {
     useEffect(() => {
       getPic();
   }, []);
+  const addToCart = (picId) => {
+    console.log({picId});
+  };
 
 
   return (
     <div className="pic">
-{pic.map(()=>{
-  <div key={pic.id}>
-    <img src={pic.img} alt={pic.title} />
-    <h1>{pic.title}</h1>
-    <h2>{pic.price}</h2>
-    <p>{pic.description}</p>
-    <Link to={`/${pic.id}`}></Link>
-
-    </div>
-})}
-        <h1>Paintings</h1>
-
+      <h1>Paintings</h1>
+      {pic.map((item) => (
+        <div key={item.id}>
+          <img src={item.img} alt={item.title} />
+          <h1>{item.title}</h1>
+          <h2>{item.price}</h2>
+          <p>{item.description}</p>
+          <Link to={`/cart/${item.id}`}>
+          <button onClick={() => addToCart(item.id)}>ADD TO CART</button></Link>
+        </div>
+      ))}
     </div>
   );
 }
-  
 export default Painting;

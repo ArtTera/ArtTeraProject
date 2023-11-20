@@ -1,11 +1,12 @@
-import Painting from "./Painting";
-
+import { Link } from "react-router-dom";
 const HomePage = () => {
   return (
     <div className="home">
       <h1 className="home-title">ArtTera</h1>
-      <button onClick={Painting}> View Me! </button>
+      <Link to="/painting">
+        <button>VIEW ME!</button>
+      </Link>
     </div>
   );
-}
+};
 export default HomePage;
