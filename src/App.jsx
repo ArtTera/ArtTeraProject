@@ -7,25 +7,16 @@ import Cart from "./pages/Cart";
 import Painting from "./pages/Painting";
 import PaymentMethod from "./pages/PaymentMethods";
 
-const containerStyle = {
-  width: "100vw",
-  height: "100vh",
-  backgroundImage: `url(src/assets/image-from-rawpixel-id-6233550-jpeg.jpg)`,
-  backgroundPosition: "center",
-  backgroundSize: "cover",
-  backgroundRepeat: "no-repeat",
-};
-
 function App() {
   return (
-    <div  
-    style={containerStyle}>
-      <><Navbar /><Routes>
-          <Route path="/" exact element={<HomePage />} />
-          <Route path="/Cart" element={<Cart />} />
-          <Route path="/Painting" element={<Painting />} />
-          <Route path="/PaymentMethod" element={<PaymentMethod />} />
-        </Routes></>
+    <div>
+      <Navbar />
+      <Routes>
+        <Route path="/" exact element={<HomePage />} />
+        <Route path="/Cart" element={<Cart />} />
+        <Route path="/Painting" element={<Painting />} />
+        <Route path="/PaymentMethod" element={<PaymentMethod />} />
+      </Routes>
     </div>
   );
 }
