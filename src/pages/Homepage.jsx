@@ -10,15 +10,6 @@ const containerStyle = {
   backgroundRepeat: "no-repeat",
 };
 
-const containerStyle = {
-  width: "100vw",
-  height: "100vh",
-  backgroundImage: `url(src/assets/image-from-rawpixel-id-6233550-jpeg.jpg)`,
-  backgroundPosition: "center",
-  backgroundSize: "cover",
-  backgroundRepeat: "no-repeat",
-};
-
 const HomePage = () => {
   return (
     <div style={containerStyle} className="home">
