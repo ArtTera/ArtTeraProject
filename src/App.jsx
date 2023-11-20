@@ -4,7 +4,7 @@ import Navbar from "./components/Navbar";
 
 import HomePage from "./pages/Homepage";
 import Cart from "./pages/Cart";
-import Painting from "./pages/Painitng";
+import Painting from "./pages/Painting";
 import PaymentMethod from "./pages/PaymentMethods";
 
 const containerStyle = {
@@ -23,7 +23,7 @@ function App() {
       <><Navbar /><Routes>
           <Route path="/" exact element={<HomePage />} />
           <Route path="/Cart" element={<Cart />} />
-          <Route path="/Painiting" element={<Painting />} />
+          <Route path="/Painting" element={<Painting />} />
           <Route path="/PaymentMethod" element={<PaymentMethod />} />
         </Routes></>
     </div>
