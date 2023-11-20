@@ -1,5 +1,4 @@
-import React from "react";
-import { Link } from "react-router-dom";
+
 
 const About = () => {
   return (
@@ -34,7 +33,7 @@ const About = () => {
 
       <h3>Exploring the Past</h3>
       <p>
-        Step into ArtTera, and you'll embark on a journey through time. Our
+        Step into ArtTera, and you will embark on a journey through time. Our
         curated collections take you back to the grandeur of ancient Egypt,
         where pharaohs ruled the Nile, and the Mousibotimia civilization, with
         its mesmerizing contributions to art, science, and philosophy. Each
