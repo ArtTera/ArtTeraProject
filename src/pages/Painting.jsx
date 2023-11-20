@@ -21,7 +21,7 @@ function Painting() {
   return (
     <div className="pic">
 {pic.map(()=>{
-  <div Key={pic.id}>
+  <div key={pic.id}>
     <img src={pic.img} alt={pic.title} />
     <h1>{pic.title}</h1>
     <h2>{pic.price}</h2>
