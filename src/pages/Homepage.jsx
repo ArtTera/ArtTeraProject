@@ -1,4 +1,3 @@
-import Painting from "./Painting";
 import { Link } from "react-router-dom";
 
 const containerStyle = {
