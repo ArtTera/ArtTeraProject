@@ -4,15 +4,8 @@ import HomePage from "./pages/Homepage";
 import Cart from "./pages/Cart";
 import Painting from "./pages/Painting";
 import PaymentMethod from "./pages/PaymentMethods";
-
-const containerStyle = {
-  width: "100vw",
-  height: "100vh",
-  backgroundImage: `url(src/assets/image-from-rawpixel-id-6233550-jpeg.jpg)`,
-  backgroundPosition: "center",
-  backgroundSize: "cover",
-  backgroundRepeat: "no-repeat",
-};
+import About from "./components/about";
+import Footer from "./components/Footer";
 
 function App() {
   return (
