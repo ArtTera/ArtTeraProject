@@ -6,6 +6,7 @@ import Painting from "./pages/Painting";
 import PaymentMethod from "./pages/PaymentMethods";
 import About from "./components/about";
 import AddPaintingPage from "./pages/addPaintingPage";
+import EditItem from "./pages/EditItem";
 
 function App() {
   return (
@@ -18,6 +19,8 @@ function App() {
         <Route path="/PaymentMethod" element={<PaymentMethod />} />
         <Route path="/about" element={<About />} />
         <Route path="/addPaintingPage" element={<AddPaintingPage />} />
+        <Route path="/EditItem/:picId"  element={<EditItem />} />
+
       </Routes>
     </div>
   );

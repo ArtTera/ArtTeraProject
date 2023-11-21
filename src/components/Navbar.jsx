@@ -5,9 +5,9 @@ function Navbar() {
   return (
     <nav className="Navbar">
       <NavLink to="/">Home</NavLink> |{" "}
-      <NavLink to="src/components/about.jsx">About</NavLink>|{" "}
-      <NavLink to="src/components/contact.jsx">contact</NavLink>|{" "}
-      <NavLink to="src/components/Help!.jsx">HELP?</NavLink>
+      <NavLink to="/about">About</NavLink>|{" "}
+      <NavLink to="/contact">contact</NavLink>|{" "}
+      <NavLink to="/Help!">HELP?</NavLink>
 
     </nav>
   );
