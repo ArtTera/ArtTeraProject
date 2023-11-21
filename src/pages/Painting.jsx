@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 import axios from "axios";
 
 function Painting() {
   const [pic, setPic] = useState([]);
+  const navigate = useNavigate();
 
   const getPic = () => {
     axios
@@ -39,15 +40,18 @@ function Painting() {
         console.log(error);
       });
   };
+  const editPic = (picId) => {
+    navigate(`/edit/${picId}`);
+  };
 
   return (
     <div className="pic">
       <h1>Paintings</h1>
       <Link to="/addPaintingPage">
-                <p>
-                    <button>Create</button>
-                </p>
-            </Link>
+        <p>
+          <button>CREATE</button>
+        </p>
+      </Link>
 
       {pic.map((item) => (
         <div key={item.id}>
@@ -60,6 +64,9 @@ function Painting() {
             <button onClick={() => addToCart(item.id)}>ADD TO CART</button>
           </Link>
           <button onClick={() => deletePic(item.id)}>DELETE</button>
+          <Link to={`/EditItem/${item.id}`}>
+            <button onClick={() => editPic(item.id)}>EDIT</button>
+          </Link>
         </div>
       ))}
     </div>
