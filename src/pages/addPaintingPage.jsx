@@ -8,7 +8,7 @@ import { useNavigate } from "react-router-dom";
 function AddPaintingPage() {
   const [description, setDescription] = useState("");
   const [title, setTitle] = useState("");
-  const [price, setPrice] = useState("");
+  const [price, setPrice] = useState("0");
   const [img, setImg] = useState("");
   const navigate = useNavigate();
 
@@ -30,7 +30,7 @@ function AddPaintingPage() {
       .catch((error) => {
         console.log(error);
       });
-  };
+  }
 
   return (
     <div className="addPainting">

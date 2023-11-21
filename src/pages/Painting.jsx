@@ -22,7 +22,7 @@ function Painting() {
   useEffect(() => {
     getPic();
   }, []);
-  
+
   const addToCart = (picId) => {
     console.log({ picId });
   };
@@ -32,6 +32,7 @@ function Painting() {
       .delete(`https://appi.adaptable.app/pic/${picId}`)
       .then((response) => {
         console.log("Picture deleted successfully");
+        console.log(response);
         getPic();
       })
       .catch((error) => {
