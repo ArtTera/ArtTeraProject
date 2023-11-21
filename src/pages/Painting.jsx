@@ -26,6 +26,18 @@ function Painting() {
     console.log({ picId });
   };
 
+  const deletePic = (picId) => {
+    axios
+      .delete(`https://appi.adaptable.app/pic/${picId}`)
+      .then((response) => {
+        console.log("Picture deleted successfully");
+        getPic();
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  };
+
   return (
     <div className="pic">
       <h1>Paintings</h1>
@@ -40,9 +52,11 @@ function Painting() {
           <Link to={`/cart/${item.id}`}>
             <button onClick={() => addToCart(item.id)}>ADD TO CART</button>
           </Link>
+          <button onClick={() => deletePic(item.id)}>DELETE</button>
         </div>
       ))}
     </div>
   );
 }
+
 export default Painting;
