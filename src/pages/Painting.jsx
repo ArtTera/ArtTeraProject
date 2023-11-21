@@ -22,6 +22,7 @@ function Painting() {
   useEffect(() => {
     getPic();
   }, []);
+  
   const addToCart = (picId) => {
     console.log({ picId });
   };
@@ -41,6 +42,11 @@ function Painting() {
   return (
     <div className="pic">
       <h1>Paintings</h1>
+      <Link to="/addPaintingPage">
+                <p>
+                    <button>Create</button>
+                </p>
+            </Link>
 
       {pic.map((item) => (
         <div key={item.id}>

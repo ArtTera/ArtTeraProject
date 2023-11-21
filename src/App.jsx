@@ -1,12 +1,11 @@
 import { Route, Routes } from "react-router-dom";
-
 import Navbar from "./components/Navbar";
 import HomePage from "./pages/Homepage";
 import Cart from "./pages/Cart";
 import Painting from "./pages/Painting";
 import PaymentMethod from "./pages/PaymentMethods";
 import About from "./components/about";
-import Footer from "./components/Footer";
+import AddPaintingPage from "./pages/addPaintingPage";
 
 function App() {
   return (
@@ -14,11 +13,11 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" exact element={<HomePage />} />
-        <Route path="/Cart" element={<Cart />} />
+        <Route path="/cart/:id" element={<Cart />} />
         <Route path="/Painting" element={<Painting />} />
         <Route path="/PaymentMethod" element={<PaymentMethod />} />
-        <Route path="/About" element={<About />} />
-        <Route path="/Footer" element={<Footer />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/addPaintingPage" element={<AddPaintingPage />} />
       </Routes>
     </div>
   );
