@@ -1,7 +1,15 @@
+.Navbar {
+  background-color: #553141;
+padding: 20px;
+font-size: 18px;
+}
 .Navbar a {
-  color: black;
+  color: #E18B86;
+  transition: color 0.3s, background-color 0.3s, border-color 0.3s;
 }
 
 .Navbar a.active {
-  color: white;
+  color: #553141;
+  background-color: #E18B86;
 }
+

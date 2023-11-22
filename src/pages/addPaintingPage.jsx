@@ -33,7 +33,7 @@ function AddPaintingPage() {
   }
 
   return (
-    <div className="addPainting">
+    <div className="inputs">
           <h3>adding</h3>
           <form onSubmit={handleSubmit}>
           <div>

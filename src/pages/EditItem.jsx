@@ -47,7 +47,7 @@ function EditItem() {
   };
 
   return (
-    <div className="EditItem">
+    <div className="inputs">
       <h3>Editing</h3>
       <form onSubmit={handleFormSubmit}>
         <div>

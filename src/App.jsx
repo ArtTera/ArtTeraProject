@@ -7,22 +7,24 @@ import PaymentMethod from "./pages/PaymentMethods";
 import About from "./components/about";
 import AddPaintingPage from "./pages/addPaintingPage";
 import EditItem from "./pages/EditItem";
+import Footer from "./components/Footer";
+
+
 
 function App() {
   return (
-    <div>
-      <Navbar />
-      <Routes>
-        <Route path="/" exact element={<HomePage />} />
-        <Route path="/cart/:id" element={<Cart />} />
-        <Route path="/Painting" element={<Painting />} />
-        <Route path="/PaymentMethod" element={<PaymentMethod />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/addPaintingPage" element={<AddPaintingPage />} />
-        <Route path="/EditItem/:picId"  element={<EditItem />} />
+      <><Navbar /><Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/cart/:id" element={<Cart />} />
+      <Route path="/Painting" element={<Painting />} />
+      <Route path="/PaymentMethod" element={<PaymentMethod />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/addPaintingPage" element={<AddPaintingPage />} />
+      <Route path="/EditItem/:picId" element={<EditItem />} />
+      <Route path="/Footer" element={<Footer />} />
 
-      </Routes>
-    </div>
+    </Routes></>
+    
   );
 }
 

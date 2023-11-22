@@ -1,22 +1,16 @@
 import { Link } from "react-router-dom";
 
-const containerStyle = {
-  width: "100vw",
-  height: "100vh",
-  backgroundImage: `url(src/assets/image-from-rawpixel-id-6233550-jpeg.jpg)`,
-  backgroundPosition: "center",
-  backgroundSize: "cover",
-  backgroundRepeat: "no-repeat",
-};
 
 const HomePage = () => {
   return (
-    <div style={containerStyle} className="home">
-      <h1 className="home-title">ArtTera</h1>
+      <div className="home-title"><h1 className="p-name">ArtTera</h1>
+      <p className="text">
+      Experience the vibrant tapestry of artistic expression at ArtTera Gallery,<br></br> where every brushstroke tells a unique story,<br></br> and creativity knows no bounds
+      </p>
       <Link to="/painting">
-        <button>VIEW ME!</button>
-      </Link>
-    </div>
+        <br></br>
+      <button className="view">VIEW ME!</button>
+    </Link></div>
   );
 };
 export default HomePage;
