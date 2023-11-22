@@ -13,8 +13,8 @@ function App() {
   return (
     <>
       <Navbar />
+      <h1>Hello world</h1>
       <Routes>
-        <h1>Hello world</h1>
         <Route path="/" element={<HomePage />} />
         <Route path="/cart/:id" element={<Cart />} />
         <Route path="/Painting" element={<Painting />} />
