@@ -30,14 +30,15 @@
 -> Styling:
 
 - Adding icons instead of buttons
-- Adding more content
-- Adding CSS for each page
+- Adding more content in the about us and contact page
+- Applying CSS for each page
 
 # 4 Milestones:
 
 -> Bonus:
-[ ]: Filter
+[ x ]: Filter
 [ x ]: Uploading more photos
+[ ]: Like icon+functionality for increasing and decreasing
 [ ]: Styling the Footer
 
 # 5 Milestone:
