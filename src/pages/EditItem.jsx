@@ -14,7 +14,7 @@ function EditItem() {
     axios
       .get(`https://appi.adaptable.app/pic/${picId}`)
       .then((response) => {
-       setTitle(response.data.title);
+        setTitle(response.data.title);
         setDescription(response.data.description);
         setPrice(response.data.price);
         setImg(response.data.img);
@@ -47,12 +47,13 @@ function EditItem() {
   };
 
   return (
-    <div className="inputs">
-      <h3>Editing</h3>
+    <div className="inputs-container">
       <form onSubmit={handleFormSubmit}>
         <div>
+          <h1>Editing</h1>
           <label>Title</label>
           <input
+            className="inputs"
             type="text"
             placeholder="enter the title"
             value={title}
@@ -65,6 +66,7 @@ function EditItem() {
         <div>
           <label>Description</label>
           <textarea
+            className="inputs"
             type="text"
             placeholder="Add some description"
             value={description}
@@ -76,6 +78,7 @@ function EditItem() {
         <div>
           <label>Price</label>
           <input
+            className="inputs"
             type="text"
             value={price}
             onChange={(e) => {
@@ -86,6 +89,7 @@ function EditItem() {
         <div>
           <label>Img</label>
           <input
+            className="inputs"
             type="URL"
             value={img}
             required={true}
@@ -94,7 +98,6 @@ function EditItem() {
             }}
           />
         </div>
-
         <button type="submit">Update</button>
       </form>
     </div>

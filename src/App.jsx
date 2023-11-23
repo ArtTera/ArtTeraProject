@@ -13,7 +13,7 @@ function App() {
   return (
     <>
       <Navbar />
-      
+
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/cart/:id" element={<Cart />} />
@@ -22,8 +22,8 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/addPaintingPage" element={<AddPaintingPage />} />
         <Route path="/EditItem/:picId" element={<EditItem />} />
-        <Route path="/Footer" element={<Footer />} />
       </Routes>
+      <Footer />
     </>
   );
 }
