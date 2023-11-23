@@ -74,6 +74,10 @@ h1 {
 h2 {
   color: #777;
 }
+
+h3 {
+  color: #777;
+}
 .p-name {
   font-size: 50px;
   color: #582133;
@@ -344,7 +348,6 @@ p {
   background-color: #e18b8648;
   border: none;
   box-shadow: 1px 1px 5px 0.2px #582133;
-
 }
 
 @media (max-width: 600px) {
@@ -400,4 +403,8 @@ p {
   right: 0;
   text-align: center;
   padding: 35px;
+}
+
+label {
+  color: #582133;
 }
