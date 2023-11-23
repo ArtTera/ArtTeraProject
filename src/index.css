@@ -335,9 +335,16 @@ p {
 .filter {
   display: flex;
   width: fit-content;
-  position: center;
+  justify-content: center;
   max-width: 240px;
-  background-color: #e18b86;
+  border-radius: 10px;
+  padding: 8px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #e18b8648;
+  border: none;
+  box-shadow: 1px 1px 5px 0.2px #582133;
+
 }
 
 @media (max-width: 600px) {

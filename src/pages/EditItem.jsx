@@ -98,7 +98,10 @@ function EditItem() {
             }}
           />
         </div>
-        <button type="submit">Update</button>
+        <br></br>
+        <button className="addBtn" type="submit">
+          Update
+        </button>
       </form>
     </div>
   );

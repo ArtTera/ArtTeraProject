@@ -1,4 +1,4 @@
-import { useEffect, useState, useMemo} from "react";
+import { useEffect, useState, useMemo } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 
@@ -23,22 +23,20 @@ function Painting() {
     getPic();
   }, []);
 
-
-  const [filterValue, setFilterValue] = useState('');
+  const [filterValue, setFilterValue] = useState("");
   const filteredPainting = useMemo(() => {
-    return pic.filter(picElement =>{
-      console.log(filterValue)
-      if(!filterValue){
-        return picElement
+    return pic.filter((picElement) => {
+      console.log(filterValue);
+      if (!filterValue) {
+        return picElement;
       }
-     return `${picElement.price}`== `${filterValue}$`
-    })
+      return `${picElement.price}` == `${filterValue}$`;
+    });
   }, [filterValue, pic]);
 
-const handleFilterChange = e => {
+  const handleFilterChange = (e) => {
     setFilterValue(e.target.value);
   };
-
 
   const addToCart = (picId) => {
     console.log({ picId });
@@ -61,15 +59,23 @@ const handleFilterChange = e => {
   };
 
   return (
-    <><div>
-      <input className="filter" type="number" value={filterValue} onChange={handleFilterChange} />
-      {/* <ul>
+    <>
+      <div>
+        <br></br>
+        <input
+          className="filter"
+          placeholder="Filter by price..."
+          type="number"
+          value={filterValue}
+          onChange={handleFilterChange}
+        />
+        {/* <ul>
         {pic&&filteredPainting.map(pic => (
           <li key={pic.id}>{pic.price}</li>
         ))}
       </ul> */}
-    </div>
-    <div className="pic">
+      </div>
+      <div className="pic">
         {filteredPainting.map((item) => (
           <div key={item.id}>
             <img src={item.img} alt={item.title} />
@@ -78,7 +84,11 @@ const handleFilterChange = e => {
             <p>{item.description}</p>
             <div className="icons-container">
               <Link to={`/cart/${item.id}`} className="icons-container">
-                <button data-quantity="0" className="btn-cart" onClick={addToCart}>
+                <button
+                  data-quantity="0"
+                  className="btn-cart"
+                  onClick={addToCart}
+                >
                   <svg
                     className="icon-cart"
                     viewBox="0 0 24.38 30.52"
@@ -126,7 +136,8 @@ const handleFilterChange = e => {
             </div>
           </div>
         ))}
-      </div></>
+      </div>
+    </>
   );
 }
 
