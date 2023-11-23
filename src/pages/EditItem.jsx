@@ -36,9 +36,9 @@ function EditItem() {
     };
 
     axios
-      .put(`https://appi.adaptable.app/pic ${picId}`, requestBody)
+      .put(`https://appi.adaptable.app/pic/${picId}`, requestBody)
       .then((response) => {
-        navigate("/pic");
+        navigate("/painting");
         console.log(response);
       })
       .catch((error) => {
