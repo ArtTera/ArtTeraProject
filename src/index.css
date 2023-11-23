@@ -344,19 +344,20 @@ p {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-#addButton {
+button {
   height: 3em;
   width: 8em;
   border: none;
   border-radius: 10em;
-  background: #016dd9;
+  background: #553141;
   font-size: 17px;
-  color: #ffffff;
+  color: #e18b86;
   font-family: inherit;
   font-weight: 500;
+  justify-content: center;
 }
 
-#addButton:hover {
+button:hover {
   animation: shake3856 0.3s linear infinite both;
 }
 
