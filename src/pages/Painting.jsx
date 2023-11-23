@@ -62,7 +62,7 @@ const handleFilterChange = e => {
 
   return (
     <><div>
-      <input type="number" value={filterValue} onChange={handleFilterChange} />
+      <input className="filter" type="number" value={filterValue} onChange={handleFilterChange} />
       {/* <ul>
         {pic&&filteredPainting.map(pic => (
           <li key={pic.id}>{pic.price}</li>
