@@ -82,7 +82,7 @@ function AddPaintingPage() {
         </div>
         <div>
           <br></br>
-          <button>Add</button>
+          <button className="addBtn">Add</button>
         </div>
       </form>
     </div>

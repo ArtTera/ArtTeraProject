@@ -344,7 +344,7 @@ p {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-button {
+.addBtn {
   height: 3em;
   width: 8em;
   border: none;
@@ -357,7 +357,7 @@ button {
   justify-content: center;
 }
 
-button:hover {
+.addBtn:hover {
   animation: shake3856 0.3s linear infinite both;
 }
 
