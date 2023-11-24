@@ -1,3 +1,17 @@
+# About this project:
+
+This is an online gallery that connects two great civlizations together to take you in an awesome journey where the old and the new art of the Egyptian and Mousibotimia meets.
+
+# Instructions to run this app in my computer:
+
+- git clone
+- npm install
+- npm run dev
+
+# DEMO:
+
+https://main--golden-salamander-91a490.netlify.app/
+
 # MVP:
 
 # 1 Milestones:
