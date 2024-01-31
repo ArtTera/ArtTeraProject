@@ -8,6 +8,8 @@ import About from "./components/about";
 import AddPaintingPage from "./pages/addPaintingPage";
 import EditItem from "./pages/EditItem";
 import Footer from "./components/Footer";
+import LoginPage from "./pages/LoginPage";
+import SignupPage from "./pages/SignupPage";
 
 function App() {
   return (
@@ -22,6 +24,8 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/addPaintingPage" element={<AddPaintingPage />} />
         <Route path="/EditItem/:picId" element={<EditItem />} />
+        <Route path="/LoginPage" element={<LoginPage />} />
+        <Route path="/SignupPage" element={<SignupPage />} />
       </Routes>
       <Footer />
     </>
